@@ -1,0 +1,45 @@
+﻿<h1>Home</h1>
+<p>Hi {{userFromApi.firstName}} Welcome to Angular 7 Login App !!</p>
+<!--<p>Your role is: <strong>{{currentUser.role}}</strong>.</p>
+<p>This page can be accessed by all authenticated users.</p>-->
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child<!--(even)--> {
+  background-color: #dddddd;
+}
+</style>
+<div>
+    Information about {{userFromApi.firstName}} {{userFromApi.lastName}} : <br/>
+	<br/><table>
+	<tr>
+    <td>Country</td>
+    <td>India</td>
+  </tr>
+  <tr>
+    <td>Job Profile</td>
+    <td>CA at TopCoder</td>
+  </tr>
+    <tr>
+    <td>Home State</td>
+    <td>{{userFromApi.homestate}}</td>
+  </tr>
+  <tr>
+    <td>Luckey Number</td>
+    <td>{{userFromApi.luckeynumber}}</td>
+  </tr>
+	</table>
+   <!-- <ul>
+        <li *ngIf="userFromApi">{{userFromApi.firstName}} {{userFromApi.lastName}}</li>
+    </ul>-->
+</div>
